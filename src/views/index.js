@@ -14,7 +14,6 @@ const ROUTES = {
   'home': 'HomeState'
 };
 
-/* @ngInject */
 function configureStates ($stateProvider, $urlRouterProvider, $injector) {
   angular.forEach(ROUTES, (constant, name) => {
     $stateProvider.state(name, $injector.get(constant));

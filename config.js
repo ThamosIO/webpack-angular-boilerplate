@@ -1,5 +1,6 @@
-const path    = require('path');
-const webpack = require('webpack');
+const path             = require('path');
+const webpack          = require('webpack');
+const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -12,6 +13,7 @@ module.exports = {
     publicPath: '/build/'
   },
   plugins: [
+    new ngAnnotatePlugin({add: true}),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
   ],
