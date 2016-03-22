@@ -1,5 +1,5 @@
 {
-  "name": "webpack-angular-boilerplate",
+  "name": "rednet-angular-boilerplate",
   "version": "0.1.0",
   "scripts": {
     "start": "node server.js"
